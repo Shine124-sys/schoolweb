@@ -1,0 +1,27 @@
+# Walkthrough - Authentication and API Fixes
+
+I have addressed the issues preventing successful login and session persistence in the SchoolWeb application.
+
+## Changes Made
+
+### 1. API Configuration
+Updated `NEXT_PUBLIC_API_URL` in [.env.local](file:///c:/Users/injpa/Desktop/schoolweb/.env.local) to include the `/api` prefix. This ensures the frontend correctly communicates with the backend routes.
+
+### 2. Authentication Synchronization
+Modified [api.js](file:///c:/Users/injpa/Desktop/schoolweb/lib/api.js) to sync the JWT token to an `auth_token` cookie. This allows Next.js Server Components and Middleware to access the user session, fixing "401 Unauthorized" errors on protected pages.
+
+### 3. Seed Route
+Created a new [seedController.js](file:///c:/Users/injpa/Desktop/schoolweb/backend/controllers/seedController.js) and registered a `POST /api/seed` route in [misc.js](file:///c:/Users/injpa/Desktop/schoolweb/backend/routes/misc.js). This allows you to initialize the demo data directly from the frontend or via API.
+
+## Verification Results
+
+- **Data Seeding**: Successfully populated the database with demo users:
+  - Admin: `admin@school.com` / `password123`
+  - Teacher: `teacher@school.com` / `password123`
+  - Parent: `parent@school.com` / `password123`
+- **API URL**: Verified that requests now target the correct endpoints.
+
+> [!IMPORTANT]
+> **Action Required**: Please restart your backend server (the terminal running `node server.js`) for the new API routes and configuration changes to take effect.
+
+Once restarted, you should be able to log in using the demo accounts listed above.
