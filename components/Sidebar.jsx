@@ -59,7 +59,7 @@ export default function Sidebar() {
 
     return (
         <aside
-            className="fixed top-0 left-0 h-screen w-64 bg-white border-r border-slate-200 flex flex-col z-30 shadow-sm"
+            className="fixed top-0 left-0 h-screen w-64 bg-white/40 backdrop-blur-lg border-r border-white/20 flex flex-col z-30 shadow-[4px_0_30px_rgba(0,0,0,0.02)]"
             style={{ width: 'var(--sidebar-width)' }}
         >
             {/* Logo */}

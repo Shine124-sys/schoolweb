@@ -51,10 +51,10 @@ const TESTIMONIALS = [
 
 export default function LandingPage() {
     return (
-        <div className="min-h-screen bg-white font-sans">
+        <div className="min-h-screen font-sans">
 
             {/* ══════════ NAVBAR ══════════ */}
-            <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+            <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
                 <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <Image src="/school_logo.jpeg" alt="School Logo" width={40} height={40} className="rounded-xl shadow" />
@@ -111,7 +111,7 @@ export default function LandingPage() {
                     {/* Stats */}
                     <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-5">
                         {STATS.map(({ label, value }) => (
-                            <div key={label} className="bg-white rounded-2xl border border-slate-100 shadow-sm p-5">
+                            <div key={label} className="glass-card rounded-2xl p-5 hover:shadow-lg transition-all duration-300">
                                 <p className="text-3xl font-extrabold text-green-700">{value}</p>
                                 <p className="text-sm text-slate-500 mt-1">{label}</p>
                             </div>
@@ -184,7 +184,7 @@ export default function LandingPage() {
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {FEATURES.map(({ icon: Icon, title, desc }) => (
-                            <div key={title} className="group p-6 rounded-2xl border border-slate-100 bg-white hover:border-green-200 hover:shadow-lg hover:shadow-green-50 transition-all duration-200">
+                            <div key={title} className="group p-6 rounded-2xl glass-card hover:shadow-xl transition-all duration-300">
                                 <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mb-4 group-hover:bg-green-100 transition">
                                     <Icon className="w-6 h-6 text-green-700" />
                                 </div>

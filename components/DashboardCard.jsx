@@ -17,7 +17,7 @@ export default function DashboardCard({ title, value, subtitle, icon: Icon, colo
     };
 
     return (
-        <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-200 group">
+        <div className="glass-card rounded-2xl p-5 hover:shadow-lg transition-all duration-300 group">
             <div className="flex items-start justify-between mb-4">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${colorMap[color]} flex items-center justify-center group-hover:scale-110 transition-transform duration-200 shadow-sm`}>
                     {Icon && <Icon className="w-6 h-6 text-white" />}

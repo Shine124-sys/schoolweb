@@ -10,7 +10,7 @@ export default function Navbar({ title }) {
     const today = new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 
     return (
-        <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-6 sticky top-0 z-20">
+        <header className="h-16 bg-white/70 backdrop-blur-xl border-b border-white/20 flex items-center justify-between px-6 sticky top-0 z-20 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
             <div className="flex items-center gap-3">
                 <Image src="/school_logo.jpeg" alt="School Logo" width={40} height={40} className="rounded" />
                 <div>
