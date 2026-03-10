@@ -208,7 +208,7 @@ export default function LandingPage() {
                         {[
                             {
                                 photo: '/Principal.jpeg',
-                                name: 'Taibur Rahman - B.Sc | MSW | PGDCA',
+                                name: 'Taibur Rahman <br /> - B.Sc | MSW | PGDCA',
                                 designation: 'Principal',
                                 Qualification: 'B.Sc | MSW | PGDCA',
                                 subject: 'Administration',
@@ -218,9 +218,9 @@ export default function LandingPage() {
                             },
                             {
                                 photo: '/master.jpeg',
-                                name: 'Husney Mubarak(Zubair) - B.Sc | D.Pharma',
+                                name: 'Husney Mubarak (Zubair)<br /> - B.Sc | D.Pharm',
                                 designation: 'Senior Teacher',
-                                Qualification: 'B.Sc | D.Pharma',
+                                Qualification: 'B.Sc | D.Pharm',
                                 subject: 'Mathematics & Science',
                                 experience: '4+ years',
                                 about: 'A passionate teacher whose students consistently achieve top marks in board examinations. Known for making complex concepts simple and engaging.His teaching philosophy focuses on clarity and engagement, helping students master the challenges of Mathematics and General Science with confidence and curiosity.',
