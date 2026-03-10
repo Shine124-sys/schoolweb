@@ -208,7 +208,7 @@ export default function LandingPage() {
                         {[
                             {
                                 photo: '/Principal.jpeg',
-                                name: 'Taibur Rahman',
+                                name: 'Taibur Rahman - B.Sc | MSW | PGDCA',
                                 designation: 'Principal',
                                 Qualification: 'B.Sc | MSW | PGDCA',
                                 subject: 'Administration',
@@ -218,7 +218,7 @@ export default function LandingPage() {
                             },
                             {
                                 photo: '/master.jpeg',
-                                name: 'Husney Mubarak',
+                                name: 'Husney Mubarak(Zubair) - B.Sc | D.Pharma',
                                 designation: 'Senior Teacher',
                                 Qualification: 'B.Sc | D.Pharma',
                                 subject: 'Mathematics & Science',
