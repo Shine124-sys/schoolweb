@@ -212,7 +212,7 @@ export default function LandingPage() {
                                 designation: 'Principal',
                                 subject: 'Administration',
                                 experience: '5+ years',
-                                about: 'With a strong foundation in B.Sc., MSW, and PGDCA, Principal Taibur Rahman leads our institution with a commitment to social responsibility and digital literacy. He is passionate about creating a disciplined yet nurturing atmosphere where students excel in both academics and character building.',
+                                about: 'With a strong foundation in B.Sc.| MSW |PGDCA, Principal Taibur Rahman leads our institution with a commitment to social responsibility and digital literacy. He is passionate about creating a disciplined yet nurturing atmosphere where students excel in both academics and character building.',
                                 color: 'from-green-600 to-emerald-700',
                             },
                             {
@@ -221,7 +221,7 @@ export default function LandingPage() {
                                 designation: 'Senior Teacher',
                                 subject: 'Mathematics & Science',
                                 experience: '4+ years',
-                                about: ' B.Sc, D.Pharm : Faculty who makes learning fun and engaging. With 4 years of experience and a diverse academic background in Science and Pharmacy, I aim to make learning an interactive journey. My teaching philosophy focuses on clarity and engagement, helping students master the challenges of Mathematics and General Science with confidence and curiosity.',
+                                about: 'B.Sc|D.Pharma A passionate Mathematics & Science teacher whose students consistently achieve top marks in board examinations. Known for making complex concepts simple and engaging.His teaching philosophy focuses on clarity and engagement, helping students master the challenges of Mathematics and General Science with confidence and curiosity.',
                                 color: 'from-teal-600 to-cyan-700',
                             },
                             {
