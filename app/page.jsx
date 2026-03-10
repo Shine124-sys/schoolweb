@@ -93,7 +93,7 @@ export default function LandingPage() {
                         {SCHOOL_NAME}
                     </h1>
                     <p className="text-lg md:text-xl text-green-700 font-semibold mb-6">
-                        আদর্শ জাতীয় বিদ্যালয় — Run by A.K. FOUNDATION
+                       চেনীমাৰী বিল আদর্শ জাতীয় বিদ্যালয় — Run by A.K. FOUNDATION
                     </p>
                     <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
                         Welcome to the official school management portal. Staff, teachers, and parents can manage student records, fees, exams, and more — all in one secure place.
@@ -159,7 +159,7 @@ export default function LandingPage() {
                         <ul className="space-y-3">
                             {[
                                 'Affiliated to the Board of Secondary Education, Assam',
-                                'Classes VI to XII with Science and Arts streams',
+                                'Classes I to X with a focus on Assamese medium education',
                                 'Dedicated faculty with deep community roots',
                                 'Strong focus on Assamese language and cultural heritage',
                                 'Digital portal for parents to track progress anytime',
