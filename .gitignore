@@ -22,6 +22,7 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 *.log
 .eslintcache
@@ -41,8 +42,51 @@ yarn-error.log*
 *.env.local
 
 # vercel
-/ .vercel
+.vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.code-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.temp
+
+# Upload directories
+/public/uploads/
+/uploads/
+
+# Optional npm cache
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# IDE workspace settings
+*.sublime-workspace
+*.sublime-project
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
