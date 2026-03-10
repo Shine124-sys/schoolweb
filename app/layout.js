@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'SchoolWeb — School Management System',
+  title: 'Chenimari Bill Adarsha Jatiya Bidyalaya',
   description: 'Complete school management platform for PP to Class 10',
 };
 

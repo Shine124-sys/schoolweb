@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import {
     AcademicCapIcon, UserGroupIcon, ChartBarIcon,
     BookOpenIcon, CalendarIcon, ShieldCheckIcon,
@@ -9,10 +10,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 const SCHOOL_NAME = 'Chenimari Bill Adarsha Jatiya Bidyalaya';
-const SCHOOL_SHORT = 'CBAJB';
+const SCHOOL_SHORT = 'CAJB';
 const SCHOOL_LOCATION = 'Chenimari Bill, Assam';
-const SCHOOL_PHONE = '+91 xxxxxxxxxx';
-const SCHOOL_EMAIL = 'cbajb@school.edu.in';
+const SCHOOL_PHONE = '+91 7002625472';
+const SCHOOL_EMAIL = 'cajb019@gmail.com';
 
 const FEATURES = [
     { icon: UserGroupIcon, title: 'Student Management', desc: 'Manage student profiles, class assignments, attendance records, and parent contact details with ease.' },
@@ -56,9 +57,7 @@ export default function LandingPage() {
             <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
                 <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-600 to-emerald-700 flex items-center justify-center shadow">
-                            <AcademicCapIcon className="w-6 h-6 text-white" />
-                        </div>
+                        <Image src="/school_logo.jpeg" alt="School Logo" width={40} height={40} className="rounded-xl shadow" />
                         <div className="hidden sm:block">
                             <p className="font-bold text-slate-800 text-sm leading-tight">{SCHOOL_SHORT}</p>
                             <p className="text-xs text-slate-500 leading-tight">Adarsha Jatiya Bidyalaya</p>
@@ -94,7 +93,7 @@ export default function LandingPage() {
                         {SCHOOL_NAME}
                     </h1>
                     <p className="text-lg md:text-xl text-green-700 font-semibold mb-6">
-                        আদর্শ জাতীয় বিদ্যালয় — Shaping Tomorrow's Leaders
+                        আদর্শ জাতীয় বিদ্যালয় — Run by A.K. FOUNDATION
                     </p>
                     <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
                         Welcome to the official school management portal. Staff, teachers, and parents can manage student records, fees, exams, and more — all in one secure place.
@@ -208,20 +207,20 @@ export default function LandingPage() {
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
                             {
-                                photo: '/teacher_headmaster.png',
-                                name: 'Sri Dilip Kumar Das',
-                                designation: 'Headmaster',
+                                photo: '/Principal.jpeg',
+                                name: 'Taibur Rahman',
+                                designation: 'Principal',
                                 subject: 'Administration',
-                                experience: '25+ years',
+                                experience: '5+ years',
                                 about: 'An inspiring leader with over two decades of service to Chenimari Bill community. Sri Das is known for his dedication to student welfare and academic excellence.',
                                 color: 'from-green-600 to-emerald-700',
                             },
                             {
-                                photo: '/teacher_male_1.png',
-                                name: 'Sri Bhupen Bora',
+                                photo: '/master.jpeg',
+                                name: 'Husney Mubarak',
                                 designation: 'Senior Teacher',
                                 subject: 'Mathematics & Science',
-                                experience: '18+ years',
+                                experience: '4+ years',
                                 about: 'A passionate Mathematics teacher whose students consistently achieve top marks in board examinations. Known for making complex concepts simple and engaging.',
                                 color: 'from-teal-600 to-cyan-700',
                             },

@@ -1,5 +1,6 @@
 'use client';
 import { useSession } from '@/components/AuthProvider';
+import Image from 'next/image';
 
 import { BellIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
@@ -10,9 +11,12 @@ export default function Navbar({ title }) {
 
     return (
         <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-6 sticky top-0 z-20">
-            <div>
-                <h1 className="text-lg font-semibold text-slate-800">{title}</h1>
-                <p className="text-xs text-slate-400">{today}</p>
+            <div className="flex items-center gap-3">
+                <Image src="/school_logo.jpeg" alt="School Logo" width={40} height={40} className="rounded" />
+                <div>
+                    <h1 className="text-lg font-semibold text-slate-800">{title}</h1>
+                    <p className="text-xs text-slate-400">{today}</p>
+                </div>
             </div>
             <div className="flex items-center gap-3">
                 <button className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 transition-colors">
