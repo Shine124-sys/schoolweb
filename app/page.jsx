@@ -208,9 +208,9 @@ export default function LandingPage() {
                         {[
                             {
                                 photo: '/Principal.jpeg',
-                                name: 'Taibur Rahman - B.Sc | MSW | PGDCA',
+                                name: 'Taibur Rahman',
                                 designation: 'Principal',
-                                Qualification: 'B.Sc | MSW | PGDCA',
+                                qualification: 'B.Sc | MSW | PGDCA',
                                 subject: 'Administration',
                                 experience: '5+ years',
                                 about: 'With a strong foundation Mr Taibur Rahman leads the institution with a commitment to social responsibility and digital literacy. He is passionate about creating a disciplined yet nurturing atmosphere where students excel in both academics and character building.',
@@ -218,9 +218,9 @@ export default function LandingPage() {
                             },
                             {
                                 photo: '/master.jpeg',
-                                name: 'Husney Mubarak (Zubair) - B.Sc | D.Pharm',
+                                name: 'Husney Mubarak (Zubair) ',
                                 designation: 'Senior Teacher',
-                                Qualification: 'B.Sc | D.Pharm',
+                                qualification: 'B.Sc | D.Pharm',
                                 subject: 'Mathematics & Science',
                                 experience: '4+ years',
                                 about: 'A passionate teacher whose students consistently achieve top marks in board examinations. Known for making complex concepts simple and engaging.His teaching philosophy focuses on clarity and engagement, helping students master the challenges of Mathematics and General Science with confidence and curiosity.',
@@ -230,12 +230,13 @@ export default function LandingPage() {
                                 photo: '/teacher_female_1.png',
                                 name: 'Smt. Nirmala Kalita',
                                 designation: 'Assistant Teacher',
+                                qualification: 'B.A | B.Ed',
                                 subject: 'Assamese & Social Science',
                                 experience: '12+ years',
                                 about: 'A nurturing educator who champions Assamese language and cultural heritage. Her lessons connect academics with the rich traditions of the local community.',
                                 color: 'from-emerald-600 to-green-700',
                             },
-                        ].map(({ photo, name, designation, subject, experience, about, color }) => (
+                        ].map(({ photo, name, designation, qualification, subject, experience, about, color }) => (
                             <div key={name} className="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-xl hover:shadow-green-50 transition-all duration-300 group">
                                 {/* Photo */}
                                 <div className={`relative bg-gradient-to-br ${color} h-56 flex items-end justify-center overflow-hidden`}>
@@ -249,6 +250,7 @@ export default function LandingPage() {
                                 <div className="p-6">
                                     <p className="text-xs font-semibold text-green-600 uppercase tracking-widest mb-1">{designation}</p>
                                     <h3 className="font-bold text-slate-800 text-lg mb-0.5">{name}</h3>
+                                    <h2 className="text-sm text-slate-500 mb-2">{qualification}</h2>
                                     <p className="text-sm text-slate-500 mb-3">{subject} · {experience}</p>
                                     <p className="text-sm text-slate-500 leading-relaxed">{about}</p>
                                 </div>
