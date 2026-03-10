@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { AcademicCapIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
 import { apiPost } from '@/lib/api';

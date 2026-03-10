@@ -69,18 +69,6 @@ export default function AdminDashboardPage() {
                     color="blue"
                     subtitle="Total marks published"
                 />
-                <DashboardCard
-                    title="Fees Collected"
-                    value={formatCurrency(stats.totalFeesCollected)}
-                    icon={CurrencyRupeeIcon}
-                    color="emerald"
-                />
-                <DashboardCard
-                    title="Pending Fees"
-                    value={formatCurrency(stats.pendingFees)}
-                    icon={CurrencyRupeeIcon}
-                    color="red"
-                />
             </div>
 
             <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -89,7 +77,6 @@ export default function AdminDashboardPage() {
                     <h3 className="font-semibold text-slate-800 mb-4">Quick Actions</h3>
                     <div className="flex flex-wrap gap-3">
                         <a href="/admin/students" className="btn-secondary">Add Student</a>
-                        <a href="/admin/payments" className="btn-secondary">View Payments</a>
                         <a href="/admin/exams" className="btn-secondary">Schedule Exam</a>
                     </div>
                 </div>

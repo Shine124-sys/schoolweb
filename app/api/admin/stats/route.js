@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from '@/lib/auth';
 import { adminStats } from '@/lib/data'; // we'll calculate this dynamically
-import { students, teachers, payments, calendarEvents, exams, syllabuses } from '@/lib/data';
+import { students, teachers, calendarEvents, exams, syllabuses } from '@/lib/data';
 
 export async function GET() {
     try {
@@ -13,13 +13,8 @@ export async function GET() {
         const totalStudents = students.length;
         const totalTeachers = teachers.length;
 
-        let initialFees = { collected: 0, pending: 0 };
-        const feeStats = students.reduce((acc, curr) => {
-            const paidForStudent = payments.filter(p => p.studentId === curr._id && p.status === 'paid').reduce((sum, p) => sum + p.amount, 0);
-            acc.collected += paidForStudent;
-            acc.pending += Math.max(0, (curr.yearlyFee || 0) - paidForStudent);
-            return acc;
-        }, initialFees);
+        const feesCollected = 0;
+        const feesPending = 0;
 
         const upcomingEvents = calendarEvents.filter(e => new Date(e.date) >= new Date()).length;
         const totalExams = exams.length;
@@ -30,8 +25,8 @@ export async function GET() {
             data: {
                 totalStudents,
                 totalTeachers,
-                feesCollected: feeStats.collected,
-                feesPending: feeStats.pending,
+                feesCollected,
+                feesPending,
                 upcomingEvents,
                 totalExams,
                 totalSyllabus
